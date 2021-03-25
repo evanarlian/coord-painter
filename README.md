@@ -1,4 +1,5 @@
 # coord-painter
+Turn your painting to coordinate vectors.
 input image | result coordinates
 :----------:|:-----------------:
 ![input image](https://github.com/evanarlian/coord-painter/blob/main/images/input.png?raw=true) | ![result image](https://github.com/evanarlian/coord-painter/blob/main/images/result.png?raw=true) ![](https://...Ocean.png)
