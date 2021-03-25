@@ -32,7 +32,7 @@ def determine_path(args):
 def read_image(image_path):
 
 	try:
-		image = Image.open(image_path)
+		image = Image.open(image_path).convert("RGB")
 	except PIL.UnidentifiedImageError:
 		print("PIL cannot read the image.")
 		sys.exit(1)
