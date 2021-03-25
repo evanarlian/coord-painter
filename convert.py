@@ -31,16 +31,19 @@ def determine_path(args):
 
 def read_image(image_path):
 
+	FAIL = "\033[91m"
+	ENDC = "\033[0m"
+
 	try:
 		image = Image.open(image_path).convert("RGB")
 	except PIL.UnidentifiedImageError:
-		print("PIL cannot read the image.")
+		print(f"{FAIL}PIL cannot read the image.{ENDC}")
 		sys.exit(1)
 	except FileNotFoundError:
-		print("File not found.")
+		print(f"{FAIL}File not found.{ENDC}")
 		sys.exit(1)
 	except:
-		print("Unknown error.")
+		print(f"{FAIL}Unknown error.{ENDC}")
 		sys.exit(1)
 
 	image = np.array(image)
@@ -64,8 +67,10 @@ def to_coordinate(arr):
 
 
 def save_coords(save_path, coords):
+	OKGREEN = "\033[92m"
+	ENDC = "\033[0m"
 	np.save(save_path, coords)
-	print(f"File saved to {save_path}")
+	print(f"{OKGREEN}File saved to {save_path}{ENDC}")
 
 
 
