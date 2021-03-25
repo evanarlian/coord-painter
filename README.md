@@ -1,6 +1,11 @@
 # coord-painter
 Turn your painting to coordinate vectors.
 
+![input image](https://github.com/evanarlian/coord-painter/blob/main/images/input.png?raw=true)
+
+![result image](https://github.com/evanarlian/coord-painter/blob/main/images/result.png?raw=true)
+
+
 # Usage
 1. Create any image, using paintbrush tool in mspaint is a good example.
 2. The program will convert non-white pixels to coordinates.
@@ -16,4 +21,8 @@ NumPy is used for array manipulation.
 ```
 pip install Pillow
 pip install numpy
+```
+The example uses matplotlib for plotting.
+```
+pip install matplotlib
 ```
