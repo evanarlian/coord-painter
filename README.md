@@ -4,6 +4,9 @@ input image | result coordinates
 :----------:|:-----------------:
 ![input image](https://github.com/evanarlian/coord-painter/blob/main/images/input.png?raw=true) | ![result image](https://github.com/evanarlian/coord-painter/blob/main/images/result.png?raw=true) ![](https://...Ocean.png)
 
+# TODO
+* make importable
+
 # Usage
 1. Create any image, using paintbrush tool in mspaint is a good example.
 2. The program will convert non-white pixels to coordinates.
